@@ -1,10 +1,13 @@
 import os
 import openai
 import langchain
-
-openai.api_key='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'
-
 from langchain.document_loaders import PyPDFLoader
+
+with open("C:\\Users\\jerem\\Documents\\openai_secret_key.txt", "r") as f:
+    secret_key = f.read()
+
+openai.api_key=secret_key
+
 loader = PyPDFLoader("Texte_de_loi.pdf")
 
 pages = loader.load()
