@@ -8,3 +8,6 @@ from langchain.document_loaders import PyPDFLoader
 loader = PyPDFLoader("Texte_de_loi.pdf")
 
 pages = loader.load()
+page = pages[1]
+print(page.page_content)
+print(page.metadata)
