@@ -21,7 +21,7 @@ et à leur famille."""
 r_splitter = RecursiveCharacterTextSplitter(
     chunk_size=400,
     chunk_overlap=10, 
-    separators=["\n\n", "\n", "(?<=\. )", " ", ""]
+    separators=["\n\n", "\n", "(?<=\. )", " ", "", "."]
 )
 split = r_splitter.split_text(text)
 print(len(split))
