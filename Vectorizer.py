@@ -19,4 +19,5 @@ embedding3 = embedding.embed_query(sentence3)
 
 print(np.dot(embedding1, embedding2))
 np.dot(embedding1, embedding3)
-np.dot(embedding2, embedding3)
+np.dot(embedding2, embedding3) 
+
